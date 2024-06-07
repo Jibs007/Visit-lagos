@@ -33,11 +33,16 @@ body {
 
 .activities-section {
   color: #1d3557;
+  padding: 80px;
 }
 
 #activity-title {
   text-align: center;
   margin: 64px;
+}
+
+.activity {
+  width: 250px;
 }
 
 .container {
@@ -47,8 +52,48 @@ body {
   justify-content: space-around;
 }
 
-img {
+.activity img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  transition: 1s;
+}
+
+.activity img:hover {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translateY(-10px);
+}
+
+.guide {
+  background-color: #3c493f;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 200px;
+  transition: border-radius 0.3s ease;
+  border-radius: 8px;
+}
+
+.card {
+  width: 500px;
+  height: 350px;
+  background-color: #1b263b;
+  color: #e0e1dd;
+  padding: 40px;
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px auto;
+  border-bottom: 6px solid #415a77;
+}
+
+.avatar:hover {
+  border-radius: 50%;
 }
